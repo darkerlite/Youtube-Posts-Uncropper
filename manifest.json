@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Posts Uncropper",
+    "version": "1.0",
+    "description": "Removes image size parameters from YouTube post images.",
+    "icons": {
+        "16": "icon16.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.youtube.com/*"
+        ],
+        "js": [
+          "content.js"
+        ],
+        "run_at": "document_idle"
+      }
+    ]
+  }
